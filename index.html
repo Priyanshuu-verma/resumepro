@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumePro - Professional Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="company-logo">
+                    <i class="fas fa-file-alt"></i> RESUME
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="#pricing"><i class="fas fa-tag"></i> Pricing</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Desktop Right Actions -->
+            <div class="desktop-actions">
+                <!-- Desktop Search Bar -->
+                <div class="desktop-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                
+                <!-- Theme Toggle -->
+                <button class="action-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Notifications -->
+                <button class="action-btn" id="notificationsBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                
+                <!-- Desktop User Menu -->
+                <div class="desktop-user">
+                    <button class="user-toggle">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        John Doe
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="#"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> My Resumes</a>
+                        <a href="#"><i class="fas fa-heart"></i> Favorites</a>
+                        <div class="user-dropdown-divider"></div>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" id="mobileNav">
+                <div class="mobile-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> Our Services</a></li>
+                    <li><a href="#pricing"><i class="fas fa-tag"></i> Pricing</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-file-contract"></i> Get A Quote</a></li>
+                </ul>
+                
+                <div class="mobile-theme-toggle">
+                    <span>Dark Mode</span>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="mobileThemeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="mobile-nav-footer">
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </nav>
+            
+            <!-- Mobile Overlay -->
+            <div class="mobile-overlay" id="mobileOverlay"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Resume Deserves A Yes<br>Let's Make It Happen</h1>
+                <p>If Your Resume Isn't Getting Responses, It's Time For An Upgrade. Get An ATS-Optimized Resume Crafted By HR Experts To Help You Land More Interviews.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#services" class="btn btn-primary">VIEW SERVICES</a>
+                    <a href="#pricing" class="btn btn-secondary">SEE PRICING</a>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">4.9</div>
+                        <div class="stat-label">Instructor Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">260+</div>
+                        <div class="stat-label">Online Resume Created</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">What You Get</h2>
+            <p class="section-subtitle">
+                You're Not Just Another Applicant And Your Resume Shouldn't Look Like One
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="Group 90.png" alt="Cover Letter" style="width:100%;height:auto;border-radius:8px;margin-bottom:18px;">
+                    <h3 class="feature-title">A Resume Format That Gets You Interviews</h3>
+                    <p class="feature-description">Get a professionally written, keyword-optimized resume that lands in recruiter inboxes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="g1.png" alt="Cover Letter" style="width:100%;height:auto;border-radius:8px;margin-bottom:18px;">
+                    <h3 class="feature-title">A Cover Letter Style That Stands Out Strong</h3>
+                    <p class="feature-description">Stand out with a cover letter that speaks directly to the role and reflects your strengths.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="Group 92.png" alt="Cover Letter" style="width:100%;height:auto;border-radius:8px;margin-bottom:18px;">
+                    <h3 class="feature-title">A LinkedIn Profile That Works For You</h3>
+                    <p class="feature-description">Attract the right eyes, start conversations, and show up in recruiter searches.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="g1 (1).png" alt="Cover Letter" style="width:100%;height:auto;border-radius:8px;margin-bottom:18px;">
+                    <h3 class="feature-title">An Interview Strategy That Builds Confidence</h3>
+                    <p class="feature-description">Interview preparation with real HR professionals so you speak clearly and confidently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+                Comprehensive resume and career services tailored to your needs
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Writing</h3>
+                    <p>Professional resume creation with ATS optimization and industry-specific formatting</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> ATS-Optimized Formatting</li>
+                        <li><i class="fas fa-check"></i> Keyword Optimization</li>
+                        <li><i class="fas fa-check"></i> Industry-Specific Templates</li>
+                        <li><i class="fas fa-check"></i> 2 Rounds of Revisions</li>
+                        <li><i class="fas fa-check"></i> 48-Hour Delivery</li>
+                    </ul>
+                    <div class="service-price">$149 <span>one-time</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3>Cover Letter</h3>
+                    <p>Custom cover letters that complement your resume and highlight your unique value</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Written Content</li>
+                        <li><i class="fas fa-check"></i> Company Research</li>
+                        <li><i class="fas fa-check"></i> Role-Specific Focus</li>
+                        <li><i class="fas fa-check"></i> 2 Rounds of Revisions</li>
+                        <li><i class="fas fa-check"></i> 24-Hour Delivery</li>
+                    </ul>
+                    <div class="service-price">$79 <span>one-time</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn Makeover</h3>
+                    <p>Transform your LinkedIn profile into a powerful career marketing tool</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Profile Optimization</li>
+                        <li><i class="fas fa-check"></i> Headline & Summary Rewrite</li>
+                        <li><i class="fas fa-check"></i> Keyword Strategy</li>
+                        <li><i class="fas fa-check"></i> Connection Recommendations</li>
+                        <li><i class="fas fa-check"></i> 72-Hour Delivery</li>
+                    </ul>
+                    <div class="service-price">$99 <span>one-time</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Interview Coaching</h3>
+                    <p>One-on-one coaching to master interview techniques and build confidence</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 60-Minute Session</li>
+                        <li><i class="fas fa-check"></i> Mock Interviews</li>
+                        <li><i class="fas fa-check"></i> Question Preparation</li>
+                        <li><i class="fas fa-check"></i> Salary Negotiation Tips</li>
+                        <li><i class="fas fa-check"></i> Follow-up Email Templates</li>
+                    </ul>
+                    <div class="service-price">$129 <span>per session</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Career Transition</h3>
+                    <p>Complete package for professionals changing industries or career paths</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Resume + Cover Letter</li>
+                        <li><i class="fas fa-check"></i> LinkedIn Optimization</li>
+                        <li><i class="fas fa-check"></i> Transferable Skills Analysis</li>
+                        <li><i class="fas fa-check"></i> Industry Research Guide</li>
+                        <li><i class="fas fa-check"></i> 2 Interview Coaching Sessions</li>
+                    </ul>
+                    <div class="service-price">$349 <span>package</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Executive Package</h3>
+                    <p>Premium service for senior-level professionals and executives</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Executive Resume</li>
+                        <li><i class="fas fa-check"></i> Biography & LinkedIn</li>
+                        <li><i class="fas fa-check"></i> Board Profile</li>
+                        <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                        <li><i class="fas fa-check"></i> Priority 24/7 Support</li>
+                    </ul>
+                    <div class="service-price">$599 <span>package</span></div>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">
+                Choose the plan that works best for you. All plans include our quality guarantee.
+            </p>
+            
+            <div class="pricing-tabs">
+                <button class="pricing-tab active">Monthly</button>
+                <button class="pricing-tab">Annual (Save 20%)</button>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Essential</h3>
+                        <p class="pricing-description">Perfect for recent graduates</p>
+                    </div>
+                    <div class="pricing-price">
+                        <div class="price-amount">$99</div>
+                        <div class="price-period">per month</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 Resume Creation</li>
+                        <li><i class="fas fa-check"></i> Basic ATS Optimization</li>
+                        <li><i class="fas fa-check"></i> 1 Cover Letter</li>
+                        <li><i class="fas fa-check"></i> 48-Hour Delivery</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> LinkedIn Optimization</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Interview Coaching</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-description">Ideal for career advancement</p>
+                    </div>
+                    <div class="pricing-price">
+                        <div class="price-amount">$199</div>
+                        <div class="price-period">per month</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 3 Resume Creations</li>
+                        <li><i class="fas fa-check"></i> Advanced ATS Optimization</li>
+                        <li><i class="fas fa-check"></i> 3 Cover Letters</li>
+                        <li><i class="fas fa-check"></i> 24-Hour Delivery</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> LinkedIn Optimization</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Interview Coaching</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Executive</h3>
+                        <p class="pricing-description">Complete career transformation</p>
+                    </div>
+                    <div class="pricing-price">
+                        <div class="price-amount">$399</div>
+                        <div class="price-period">per month</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Resume Creations</li>
+                        <li><i class="fas fa-check"></i> Premium ATS Optimization</li>
+                        <li><i class="fas fa-check"></i> Unlimited Cover Letters</li>
+                        <li><i class="fas fa-check"></i> Same-Day Delivery</li>
+                        <li><i class="fas fa-check"></i> 24/7 VIP Support</li>
+                        <li><i class="fas fa-check"></i> LinkedIn Optimization</li>
+                        <li><i class="fas fa-check"></i> 2 Interview Coaching Sessions</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About ResumePro</h2>
+            <p class="section-subtitle">
+                We're on a mission to transform job searching by creating professional, ATS-optimized resumes that get results.
+            </p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Your Career Success Partner</h2>
+                    <p>
+                        Founded in 2018, ResumePro has helped over 10,000 professionals land their dream jobs. 
+                        We understand that a resume is more than just a document—it's your personal marketing tool 
+                        that can open doors to incredible opportunities.
+                    </p>
+                    <p>
+                        Our team of certified HR professionals, career coaches, and resume writers combine industry 
+                        expertise with cutting-edge ATS technology to create resumes that not only look great but 
+                        also perform exceptionally well in today's competitive job market.
+                    </p>
+                    <p>
+                        We believe that everyone deserves a resume that accurately represents their skills, 
+                        experience, and potential. That's why we've made it our mission to provide affordable, 
+                        high-quality resume services that deliver real results.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">10,000+</div>
+                            <div class="stat-label">Resumes Created</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">94%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">48h</div>
+                            <div class="stat-label">Avg. Delivery</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=80" alt="ResumePro Team">
+                    <div class="image-overlay">
+                        <h3>Our Dedicated Team</h3>
+                        <p>Certified professionals committed to your career success</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mission & Vision Section -->
+            <div class="mission-vision">
+                <div class="mv-container">
+                    <div class="mv-item">
+                        <div class="mv-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To empower job seekers with professionally crafted, ATS-optimized resumes 
+                            that effectively showcase their skills and experience, increasing their chances 
+                            of landing interviews and advancing their careers.
+                        </p>
+                    </div>
+                    <div class="mv-item">
+                        <div class="mv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To become the most trusted resume service globally, recognized for our 
+                            commitment to quality, innovation, and tangible results in helping 
+                            professionals achieve their career aspirations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Section -->
+            <div class="team-section">
+                <h2 class="section-title">Meet Our Experts</h2>
+                <p class="section-subtitle">
+                    Our team of certified professionals brings decades of combined experience in HR, recruitment, and career coaching.
+                </p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Johnson</h3>
+                            <div class="position">Lead Resume Writer</div>
+                            <p>10+ years in HR and talent acquisition. Specializes in executive and tech resumes.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                        </div>
+                        <div class="member-info">
+                            <h3>Michael Chen</h3>
+                            <div class="position">Career Coach</div>
+                            <p>Certified career coach with expertise in interview preparation and career transitions.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Emily Rodriguez">
+                        </div>
+                        <div class="member-info">
+                            <h3>Emily Rodriguez</h3>
+                            <div class="position">ATS Specialist</div>
+                            <p>Expert in optimizing resumes for applicant tracking systems and keyword optimization.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Values Section -->
+            <div class="values-section">
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-subtitle">
+                    These core principles guide everything we do at ResumePro
+                </p>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Quality Excellence</h3>
+                        <p>
+                            We never compromise on quality. Every resume undergoes multiple rounds of 
+                            review to ensure it meets our high standards before delivery.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Client-Centric</h3>
+                        <p>
+                            Your success is our priority. We work closely with you to understand your 
+                            career goals and tailor our services to meet your specific needs.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>
+                            We continuously update our methods and tools to stay ahead of industry 
+                            trends and ATS requirements, ensuring your resume remains competitive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="about-cta">
+                <h2>Ready to Transform Your Resume?</h2>
+                <p>
+                    Join thousands of successful professionals who have accelerated their careers with ResumePro
+                </p>
+                <a href="#services" class="btn btn-primary">VIEW OUR SERVICES</a>
+                <a href="#pricing" class="btn btn-secondary">SEE PRICING PLANS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPROVED FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-file-alt"></i> RESUMEPRO
+                    </div>
+                    <div class="footer-tagline">
+                        Crafting career success stories with professional resume building services. 
+                        We help job seekers stand out in competitive markets with ATS-optimized resumes.
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Career Street, Suite 500<br>New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@resumepro.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p>Subscribe to our newsletter for career tips, resume advice, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="footer-tagline">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 ResumePro. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
